@@ -18,23 +18,69 @@
 }
 
 /* navbar here */
+header {
+  box-shadow: 0px 8px 35px 0px #0000000d;
+}
 
 .nav-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  background-color: #2c49fe;
+  color: #ffffff;
   padding: 11px 28px;
   border-radius: 23px;
-  color: #ffffffff;
-  background-color: #2c49fe;
 }
 .nav-btn:hover {
-  padding: 11px 28px;
-  border-radius: 23px;
-  color: #ffffffff;
-  background-color: #7e8ad8;
-  cursor: pointer;
+  background-color: #8192ff;
+  transition: all 600ms;
 }
 
 .nav-link {
   color: #ffffffff;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    width: 316px;
+  }
+}
+
+@media (min-width: 1900px) {
+  header {
+    padding: 17px 300px !important;
+  }
+  main {
+    padding: 0 300px;
+  }
+
+  footer {
+    /* margin-top: 104px; */
+    padding-top: 81px !important;
+    padding-bottom: 25px;
+  }
+  .footer .left p {
+    margin-bottom: 0 !important;
+  }
+  .ft .right {
+    gap: 74.8px !important;
+  }
+  .copyright {
+    margin-top: 95px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1899px) {
+  header {
+    padding: 10px 10vw !important;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+  }
 }
 
 /* hero section below */
@@ -46,15 +92,16 @@
 
 .hero-heading h1 {
   font-weight: 700;
-  line-height: 150%;
+  line-height: 144%;
   letter-spacing: 0%;
+  margin-bottom: 18px;
 }
 
 .hero .hero-btns button {
   background-color: #2c49fe;
   color: white;
   border-radius: 28px;
-  padding: 11px 28px;
+  padding: 14px 28px;
   border: none;
 }
 .hero .hero-btns button:hover {
@@ -77,6 +124,7 @@ a:hover {
   font-size: 16px;
   max-width: 765px;
   line-height: 100%;
+  margin-bottom: 33px;
 }
 
 .hero-btns .btn-after {
@@ -128,11 +176,18 @@ a:hover {
 
 /* layer 2  */
 
+.layer2 > .col-md-6 > .container {
+  max-width: 633px;
+  width: 100%;
+}
+
 .layer2-heading {
   font-weight: 700;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #000000;
+  max-width: 587px;
+  width: 100%;
 }
 
 .layer2-p {
@@ -151,7 +206,7 @@ a:hover {
 }
 .card-h {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 38px;
   line-height: 100%;
   letter-spacing: 0%;
   margin-top: 45px;
@@ -233,6 +288,23 @@ a:hover {
   width: 100%;
 }
 
+.l3-flex > .number {
+  font-weight: 700;
+  font-size: 35px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+
+.l3-flex > .l3-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
 /* footer css */
 
 footer {
@@ -290,9 +362,6 @@ nav {
   padding-top: 23px;
   padding-left: 10px;
   padding-right: 15px;
-}
-.logo {
-  width: 200px;
 }
 
 .copyright {
@@ -369,6 +438,7 @@ textarea {
   border: 1px solid #00000066;
   padding-top: 10px;
   padding-left: 12px;
+  padding: 8px;
   height: 42px;
   border-radius: 5px;
   margin-top: 16px;
@@ -393,27 +463,12 @@ textarea {
 
 /* small devices */
 @media (min-width: 576px) {
-  .logo {
-    width: 240px;
-  }
-
   nav {
     padding-left: 10px;
     padding-right: 15px;
   }
   .hero-info {
     border-radius: 40px !important;
-  }
-}
-
-/* Medium devices */
-@media (min-width: 768px) {
-  .hero-info {
-    padding: 17px 23px !important;
-  }
-  .layer2 {
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -459,6 +514,7 @@ textarea {
     max-width: 962px;
     width: 100%;
     border-radius: 150px !important;
+    height: 108px;
   }
   .hero-info-btn {
     margin: 0 !important;
@@ -467,7 +523,7 @@ textarea {
 
 /* very very large display */
 
-@media (min-width: 1900px) {
+@media (max-width: 2000px) {
   header {
     padding-top: 17px;
     padding-left: 300px;
@@ -479,34 +535,128 @@ textarea {
     justify-content: space-between !important;
     max-width: 1920px;
     width: 100%;
-    padding-left: 300px !important;
-    padding-right: 300px !important;
+    padding-left: 300px;
+    padding-right: 300px;
   }
   /* hero css */
+  .hero .container p {
+    font-family: "Yantramanav", sans-serif;
+    font-size: 20px;
+    max-width: 765px;
+    line-height: 130%;
+    margin-bottom: 33px;
+  }
+
+  .hero-btns {
+    margin-bottom: 145px;
+  }
 
   .vline {
     margin-left: 50px !important;
   }
 
   .hero {
+    padding: 173px 0px 104px 0px;
     padding-bottom: 104px !important;
   }
+
+  /* layer 2  */
+
+  .layer2 {
+    padding: 137px 300px 73px 258px;
+  }
+  .l2-line {
+    margin-bottom: 21px;
+  }
+
+  .layer2-heading {
+    margin-bottom: 6px;
+  }
+  .layer2-p {
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000000b2;
+    max-width: 633px;
+    width: 100%;
+    margin-bottom: 9px !important;
+  }
+
+  .l2-cards .card {
+    margin-top: 37px !important;
+  }
+
   /* layer 3 after 1900*/
 
   .layer3 {
-    padding: 46px 500px;
+    padding: 50px 500px 46px 500px;
     padding-top: 50px !important;
   }
 
   .layer3-h {
-    margin-top: 4px !important;
-    /* max-width: 708px; */
+    font-size: 48px;
+    margin-bottom: 40px;
     text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0%;
+  }
+
+  .layer3-p {
+    margin-bottom: 78px;
   }
   /* layer 4 after 1900 */
 
   .layer4 {
     padding: 122px 300px 90px 301px;
+  }
+  .layer4 > .top > .left {
+    margin-top: 31px;
+  }
+  .layer4 > .btm {
+    margin-top: 163px;
+  }
+}
+@media (max-width: 1900px) {
+  .navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .hero-btns {
+    margin-bottom: 90px;
+  }
+  .layer2 {
+    padding: 40px 30px;
+  }
+  .layer3 {
+    padding: 40px 10%;
+  }
+  .layer4 {
+    padding: 90px 40px 90px 40px;
+  }
+  .hero {
+    padding: 49px 0px 39px 0px;
+    padding-bottom: 104px !important;
+  }
+  .copyright {
+    margin: 50px auto 0px auto !important;
+    padding-bottom: 40px;
+  }
+  .layer4 .btm .left {
+    margin-right: 0px !important;
+    margin-top: 50px !important;
+  }
+}
+
+@media (max-width: 1225px) {
+  .layer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .l2-cards {
+    max-width: 900px;
+    width: 100%;
   }
 }
 
@@ -515,6 +665,9 @@ textarea {
     max-width: 300px;
     width: 100%;
   }
+  .card {
+    margin-left: 0 !important;
+  }
 }
 
 @media (max-width: 700px) {
@@ -522,6 +675,16 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .logo {
+    width: 250px;
+  }
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .layer3-h {
+    font-size: 30px;
   }
 }
 
@@ -542,4 +705,104 @@ textarea {
     width: 100% !important;
     margin-top: 20px;
   }
+  .logo {
+    width: 175px;
+  }
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ft {
+  max-width: 1300px;
+  width: 100%;
+}
+footer .left {
+  max-width: 346.18px;
+  width: 100%;
+}
+
+footer .left .logo {
+  margin-bottom: 36px;
+}
+
+.svgs {
+  display: flex;
+  margin-top: 24px;
+  gap: 15.4px;
+}
+footer .left p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+footer .right {
+  margin-top: 45px;
+}
+
+footer .gallery div img {
+  width: 90.05px;
+}
+
+.gl_more {
+  width: 90.05px;
+  height: 62px;
+  background-color: #18205c;
+  color: #ffffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 13px 23px;
+}
+.gly-img {
+  max-width: 308.7px;
+  width: 100%;
+  gap: 0;
+  margin-top: 10px;
+  gap: 13px 18px;
+}
+
+.gly-img img {
+  max-width: 90px;
+  height: 62px;
+}
+
+nav {
+  padding-top: 23px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.services .main {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.services .inside {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  margin-top: 12px;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
