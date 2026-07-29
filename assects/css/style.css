@@ -140,6 +140,10 @@ a:hover {
   background-color: rgba(44, 73, 254, 0.74);
 }
 
+.hero-info img {
+  margin-right: 7px;
+}
+
 .hero-info-btn {
   background-color: #ffffffff;
   color: rgba(44, 73, 254, 1);
@@ -156,6 +160,7 @@ a:hover {
   width: 0;
   border: 3px solid rgba(255, 255, 255, 1);
   align-self: center;
+  margin-left: 63px;
 }
 
 .main {
@@ -203,6 +208,10 @@ a:hover {
   height: 79px;
   background-color: white;
   bottom: 79%;
+}
+.card {
+  height: 198px;
+  border-radius: 5px;
 }
 .card-h {
   font-weight: 500;
@@ -271,10 +280,17 @@ a:hover {
   line-height: 100%;
   letter-spacing: 0%;
 }
-
+.l3-card-h {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 5px;
+}
 .l3-card-p {
   font-weight: 400;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #000000b2;
 }
@@ -284,8 +300,11 @@ a:hover {
 }
 
 .l3-card {
-  max-width: 330px;
+  max-width: 339px;
   width: 100%;
+}
+.l3-card:hover {
+  box-shadow: 2px 9px 32px 0px #0000000f;
 }
 
 .l3-flex > .number {
@@ -384,10 +403,15 @@ nav {
 .date {
   color: #000000b2;
   margin-top: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 .l3-card {
-  box-shadow: 2px 9px 32px 0px #0000000f;
   padding: 10px 11px 24px 13px !important;
 }
 .l3-card img {
@@ -412,7 +436,7 @@ nav {
 .af-p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #000000b2;
 }
@@ -551,8 +575,13 @@ textarea {
     margin-bottom: 145px;
   }
 
-  .vline {
-    margin-left: 50px !important;
+  .lm {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    margin-left: 23px;
   }
 
   .hero {
