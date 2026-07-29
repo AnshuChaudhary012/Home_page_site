@@ -412,7 +412,7 @@ nav {
 }
 
 .l3-card {
-  padding: 10px 11px 24px 13px !important;
+  padding: 10px 11px 9px 13px !important;
 }
 .l3-card img {
   max-width: 314px;
@@ -428,9 +428,10 @@ nav {
 .af-h {
   font-weight: 700;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0%;
   margin-top: 9px;
+  margin-bottom: 5px;
 }
 
 .af-p {
@@ -439,13 +440,15 @@ nav {
   line-height: 150%;
   letter-spacing: 0%;
   color: #000000b2;
+  margin-bottom: 15px;
 }
 
 form h1 {
   font-weight: 700;
   font-size: 35px;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0%;
+  margin-bottom: 14px;
 }
 
 .form-btn {
@@ -834,4 +837,13 @@ nav {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+a {
+  display: block;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1e71ff !important;
+  transition: 0.25s;
 }
