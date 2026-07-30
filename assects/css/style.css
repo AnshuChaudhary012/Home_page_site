@@ -516,13 +516,12 @@ textarea {
   }
 
   .hero-heading h1 {
-    font-size: 64px;
+    font-size: 46px;
+    width: 642px;
   }
 
   .top_of_hero {
     max-width: 893px !important;
-  }
-  .hero .container {
   }
   .hero-info {
     margin: 0;
@@ -557,6 +556,10 @@ textarea {
     padding-right: 300px;
   }
 
+  .hero-heading h1 span {
+    justify-content: flex-end;
+  }
+
   .navbar {
     display: flex !important;
     justify-content: space-between !important;
@@ -576,6 +579,8 @@ textarea {
 
   .hero-btns {
     margin-bottom: 145px;
+    display: flex;
+    align-items: center;
   }
 
   .lm {
@@ -590,6 +595,10 @@ textarea {
   .hero {
     padding: 173px 0px 104px 0px;
     padding-bottom: 104px !important;
+  }
+
+  .hero-info-btn {
+    margin-left: 1.5rem !important;
   }
 
   /* layer 2  */
@@ -635,6 +644,13 @@ textarea {
     letter-spacing: 0%;
   }
 
+  .card3 {
+    margin-left: 135px;
+  }
+  .card1 {
+    margin-right: 30px;
+  }
+
   .layer3-p {
     margin-bottom: 78px;
   }
@@ -642,6 +658,9 @@ textarea {
 
   .layer4 {
     padding: 122px 300px 90px 301px;
+  }
+  .layer4 > .top {
+    justify-content: center;
   }
   .layer4 > .top > .left {
     margin-top: 31px;
@@ -668,7 +687,7 @@ textarea {
     padding: 90px 40px 90px 40px;
   }
   .hero {
-    padding: 49px 0px 39px 0px;
+    padding: 70px 10%;
     padding-bottom: 104px !important;
   }
   .copyright {
@@ -681,28 +700,59 @@ textarea {
   }
 }
 
+@media (max-width: 1380px) {
+  .layer4 .top {
+    justify-content: start;
+    margin: 10px 10%;
+  }
+  .top .left {
+    max-width: 800px;
+    width: 100%;
+  }
+  .ft {
+    flex-direction: column;
+    padding-left: 40px;
+  }
+}
+
 @media (max-width: 1225px) {
   .layer2 {
     flex-direction: column;
     align-items: center;
   }
   .l2-cards {
-    max-width: 900px;
-    width: 100%;
+    justify-content: center;
+  }
+  .card3 {
+    margin-left: 0 !important;
+    margin-right: 8px;
+  }
+  .card1 {
+    margin-right: 8px;
+  }
+  .card2 {
+    margin-right: 8px;
   }
 }
 
 @media (max-width: 1200px) {
-  .ft .right {
-    max-width: 300px;
-    width: 100%;
-  }
+  
   .card {
     margin-left: 0 !important;
   }
+  .hero-heading h1 {
+    font-size: 46px;
+    width: 642px;
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 995px) {
+  .hero-info {
+    height: 264px;
+  }
+}
+
+@media (max-width: 780px) {
   .ft {
     display: flex;
     flex-direction: column;
@@ -714,23 +764,64 @@ textarea {
   .hero {
     padding: 40px 15px;
   }
+  .hero-heading h1 {
+    font-size: 31px;
+    max-width: 448px;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .hero .container p {
+    font-size: 17px;
+    max-width: 765px;
+    line-height: 130%;
+    margin-bottom: 33px;
+    margin: 6px 0 40px 0;
+  }
+
+  .hero-info {
+    height: 264px;
+    padding: 20px;
+  }
 
   .layer3-h {
     font-size: 30px;
   }
+  .l2-cards {
+    max-width: 643px;
+    width: 100%;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 545px) {
+  .hero-info {
+    flex-direction: column;
+    height: 351px;
+    width: 256px;
+    align-items: center !important;
+    border-radius: 36px !important;
+  }
+  .hero-info-btn {
+    margin-right: 0px !important;
+  }
+
   .l3-cards {
     display: flex;
     flex-direction: column;
   }
+
+  .layer3 .container-fluid .container {
+    justify-content: center !important;
+  }
+
+
+
   form .input-inside {
     flex-direction: column;
   }
 
   .w-50 {
-    width: 100% !important;
+    /* width: 100% !important; */
     margin-top: 20px !important;
   }
   .w-100 {
@@ -739,6 +830,9 @@ textarea {
   }
   .logo {
     width: 175px;
+  }
+  .vline {
+    display: none;
   }
 }
 
