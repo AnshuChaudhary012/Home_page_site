@@ -33,8 +33,9 @@ header {
   border-radius: 23px;
 }
 .nav-btn:hover {
-  background-color: #8192ff;
-  transition: all 600ms;
+  background-color: #fff;
+  color: #1e71ff;
+  transition: all 0.45s;
 }
 
 .navbar-nav {
@@ -767,7 +768,6 @@ textarea {
     width: 100%;
   }
   .ft {
-    flex-direction: column;
     padding-left: 40px;
   }
   .hero > .container {
@@ -803,6 +803,9 @@ textarea {
   .hero-heading h1 {
     font-size: 46px;
     width: 642px;
+  }
+  .ft {
+    flex-direction: column !important;
   }
 }
 
@@ -1018,23 +1021,16 @@ nav {
 }
 .svgs a img:hover {
   transform: translateY(-5px);
+  transition: 0.45s;
 }
 .main a {
   cursor: default;
 }
 
-/* section spacing  */
-/* @media (max-width: 1024px) {
-  @media (max-width: 768px) {
-    section {
-      padding-top: 60px !important;
-      padding-bottom: 60px !important;
-    }
-  }
-  @media (min-width: 768px) {
-    section {
-      padding-top: 80px !important;
-      padding-bottom: 80px !important;
-    }
-  }
-} */
+/* mistakes */
+
+.nav-link:hover {
+  color: blue;
+  text-decoration: underline;
+  transition: 0.45s;
+}
