@@ -771,7 +771,7 @@ textarea {
 @media (max-width: 1380px) {
   .layer4 .top {
     justify-content: start;
-    margin: 10px 10%;
+    /* margin: 10px 10%; */
   }
   .top .left {
     max-width: 800px;
@@ -1052,7 +1052,7 @@ nav {
 }
 
 .layer2 {
-  max-width: 1920px;
+  max-width: 1365px;
   width: 100%;
   margin: 0 auto;
 }
