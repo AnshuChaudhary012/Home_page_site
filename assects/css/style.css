@@ -1022,3 +1022,19 @@ nav {
 .main a {
   cursor: default;
 }
+
+/* section spacing  */
+/* @media (max-width: 1024px) {
+  @media (max-width: 768px) {
+    section {
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+    }
+  }
+  @media (min-width: 768px) {
+    section {
+      padding-top: 80px !important;
+      padding-bottom: 80px !important;
+    }
+  }
+} */
