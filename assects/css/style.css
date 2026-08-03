@@ -122,7 +122,7 @@ header {
   background-color: #6979e0;
   color: white;
   border-radius: 28px;
-  padding: 11px 28px;
+  /* padding: 11px 28px; */
   border: none;
   cursor: pointer;
 }
@@ -406,6 +406,13 @@ nav {
 .layer4 {
   padding: 50px;
 }
+
+.layer4 .top {
+  margin: 0px auto;
+  max-width: 1319px;
+  width: 100%;
+}
+
 .top .left {
   max-width: 543px;
   width: 100%;
@@ -584,7 +591,7 @@ textarea {
 
 /* very very large display */
 
-@media (max-width: 2000px) {
+@media (max-width: 10000px) {
   header {
     padding-top: 17px;
     padding-left: 300px;
@@ -714,13 +721,13 @@ textarea {
   .layer4 {
     padding: 122px 300px 90px 301px;
   }
-  .layer4 > .top {
+  .layer4 .top {
     justify-content: center;
   }
-  .layer4 > .top > .left {
+  .layer4 .top > .left {
     margin-top: 31px;
   }
-  .layer4 > .btm {
+  .layer4 .btm {
     margin-top: 163px;
   }
 }
@@ -870,6 +877,7 @@ textarea {
     height: 351px;
     width: 256px;
     border-radius: 31px !important;
+    margin: 0;
   }
   .hero-info-btn {
     margin-right: 0px !important;
@@ -912,7 +920,7 @@ textarea {
   .gap-3 {
     gap: 0 !important;
   }
-  .layer4 > .btm {
+  .layer4 .btm {
     margin-top: 16px;
   }
 }
@@ -1022,6 +1030,11 @@ nav {
   color: #1e71ff !important;
   transition: 0.25s;
 }
+
+.svgs a img {
+  height: 22.41px;
+  height: 22.41px;
+}
 .svgs a img:hover {
   transform: translateY(-5px);
   transition: 0.45s;
@@ -1036,4 +1049,10 @@ nav {
   color: blue;
   text-decoration: underline;
   transition: 0.45s;
+}
+
+.layer2 {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
