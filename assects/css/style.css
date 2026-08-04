@@ -22,6 +22,11 @@ header {
   box-shadow: 0px 8px 35px 0px #0000000d;
 }
 
+.navbar {
+  max-width: 1300px;
+  width: 100%;
+}
+
 .nav-btn {
   font-weight: 600;
   font-size: 16px;
@@ -48,6 +53,9 @@ header {
 
 .nav-link {
   color: #ffffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 @media (min-width: 576px) {
@@ -424,7 +432,6 @@ nav {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
 }
@@ -719,7 +726,7 @@ textarea {
   /* layer 4 after 1900 */
 
   .layer4 {
-    padding: 122px 300px 90px 301px;
+    padding: 122px 20px 90px 20px;
   }
   .layer4 .top {
     justify-content: center;
@@ -814,6 +821,12 @@ textarea {
     font-size: 46px;
     width: 642px;
   }
+  .layer4 .top , .layer4 .btm {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
   .ft {
     flex-direction: column !important;
   }
@@ -1046,9 +1059,9 @@ nav {
 /* mistakes */
 
 .nav-link:hover {
-  color: blue;
-  text-decoration: underline;
+  font-weight: 600;
   transition: 0.45s;
+  color: #fff;
 }
 
 .layer2 {
